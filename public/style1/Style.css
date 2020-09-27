@@ -1,0 +1,188 @@
+header{
+    background-color: gray;
+    color: red;
+
+}
+hgroup{
+    padding: 10px;
+}
+h1{
+    margin: 0 0;
+}
+h2{
+    margin: 0 0;
+}
+figure{
+    padding: 15px ;
+    margin: 0 0;
+}
+h3::before{
+    content: attr(title) "  ";
+    height: 25px;
+    width: 25px;
+    background-color:red;
+    border-radius: 50%;
+    display: inline-block;
+    
+}
+
+h3 {
+    border-bottom: 1px solid black ;  
+}
+#competencies{
+    display: inline-block;
+    width: 100%;
+
+}
+.skills.skills-primary .skill{
+    color: white;
+    background-color: gray;
+    margin: 2px;
+    padding: 4px;
+}
+.skills.skills-primary::before{
+    content: "Main";
+}
+.skills.skills-primary .skill[data-skill="5"] span{
+    display: inline-block;
+    background-color: red;
+    width: 50%;
+    
+  
+}
+.skills.skills-primary .skill[data-skill="3"] span{
+    display: inline-block;
+    background-color: red;
+    width: 30%;
+}
+.skills.skills-primary .skill[data-skill="1"] span{
+    display: inline-block;
+    background-color: red;
+    width: 10%;
+}
+
+.skills.skills-secondary .skill{
+    color: white;
+    background-color: gray;
+    padding: 4px;
+    margin: 2px;
+}
+.skills.skills-secondary::before{
+    content: "Other";
+}
+.skills.skills-secondary .skill[data-skill="9"] span{
+    display: inline-block;
+    background-color: red;
+    width: 90%;
+  
+}
+.skills.skills-secondary .skill[data-skill="5"] span{
+    display: inline-block;
+    background-color: red;
+    width: 50%;
+}
+.skills.skills-secondary .skill[data-skill="7"] span{
+    display: inline-block;
+    background-color: red;
+    width: 70%;
+}
+.experience-type{
+    color: red;
+    font-weight: 800;
+    
+}
+.experience-institution::before{
+    content: "@";
+    color: red;
+}
+.experience-institution{
+    color: red;
+   font-weight: lighter;
+}
+.experience-location::before{
+    content: "in";
+    color: gray;
+}
+.experience-location::after{
+    content: "on";
+    color: gray;
+}
+.experience-date-separator{
+    color: red;
+    font-weight: bold;
+}
+.experience-location{
+    color: gray;
+}
+.experience-date{
+    color: gray;
+}
+.experience-details{
+    margin-top: -25px;
+    padding-left: 10px
+}
+dt{
+    color: white;
+    background-color: red;
+    display: inline-block;
+    width: 50%;
+}
+dd{
+    color: black;
+    display: inline-block;
+    width: 50%;
+    margin-left: 5px;
+    
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+dl{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+@media  only screen and (min-width: 600px){
+
+header div{
+    display: flex;
+    flex-direction: row;
+}
+.content{
+ display: grid;
+ grid-template-columns: 50% 50%;
+ width: 80%;
+ margin-left: 100px;
+}
+section h3{
+    padding-left: 50px;
+}
+section div{
+    padding-left: 50px;
+}
+#contact{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 500px;
+}
+dd{
+    background-color: black;
+    width: 700px;
+}
+#contact h3{
+    display: none;
+}
+
+}
