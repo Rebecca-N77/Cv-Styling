@@ -1,0 +1,195 @@
+
+h2{
+    display: none;
+}
+img{
+    display: none;
+}
+#about h3{
+    display: none;
+}
+
+#about{
+    border-top: 1px solid lightgray;
+    color: gray;
+}
+h3{
+text-decoration: underline;
+}
+.skills.skills-primary div{
+    display: inline-block;
+    color: white;
+    margin-left: 15px;
+}
+.skills.skills-primary [data-skill="5"] span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(45, 130, 145);   
+    width: 100px;
+    height: 30px;
+    float: left;
+}
+.skills.skills-primary [data-skill="3"] span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(45, 130, 145);   
+    width: 100px;
+    height: 30px;
+    float: left;
+}
+.skills.skills-primary [data-skill="1"] span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(45, 130, 145);   
+    width: 100px;
+    height: 30px;
+    float: left;
+}
+.skills.skills-primary [data-skill="5"] span::after{
+    content: "\2605\2605\2605";
+    color: white;
+}
+.skills.skills-primary [data-skill="3"] span::after{
+    content: "\2605\2605";
+    color: white;
+}
+.skills.skills-primary [data-skill="1"] span::after{
+    content: "\2605";
+    color: white;
+}
+.skills.skills-secondary div{
+    display: inline-block;
+    color: white;
+    font-size: 10px;
+    margin-left: 15px;
+}
+.skills.skills-secondary [data-skill="9"] span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(45, 130, 145);   
+    width: 100px;
+    height: 30px;
+    float: left;
+}
+.skills.skills-secondary [data-skill="5"] span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(45, 130, 145);   
+    width: 100px;
+    height: 30px;
+    float: left;
+}
+.skills.skills-secondary [data-skill="7"] span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(45, 130, 145);   
+    width: 100px;
+    height: 30px;
+    float: left;
+}
+.skills.skills-secondary [data-skill="9"] span::after{
+    content: "\2605\2605\2605\2605\2605";
+    color: white;
+}
+.skills.skills-secondary [data-skill="5"] span::after{
+    content: "\2605\2605\2605";
+    color: white;
+}
+.skills.skills-secondary [data-skill="7"] span::after{
+    content: "\2605\2605\2605\2605";
+    color: white;
+}
+.experience-institution{
+    display: none;
+    
+}
+.experience-type{
+    float: left;
+   
+    color: rgb(45, 130, 145);
+}
+.experience-details{
+    color: gray;
+}
+section div h4 span:first-child{
+  padding-inline-end: 80px;
+   
+}
+#contact h3{
+    visibility: hidden;
+}
+.contact-type{
+    visibility: hidden;
+}
+.contacts{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 80px;
+}
+.contact-email a{
+    content:url(/email.png);
+    width: 80px;
+    height: 90px;
+} 
+.contact-skype{
+    display: none;
+}
+.contact-phone a{
+    content:url(/phone.png);
+    width: 80px;
+    height: 90px;
+}
+.contact-github a{
+    content:url(/github.png);
+    width: 80px;
+    height: 90px;
+}
+.contact-facebook a{
+    content:url(/facebook.png);
+    width: 80px;
+    height: 90px;
+}
+@media only screen and (min-width:600px){
+    body{
+        width: 80%;
+        padding: 20px;
+        padding-left: 100px;
+    }
+img{
+    display: block;
+    transform: rotate(-20deg);
+    float: right;
+}
+#about p{
+    width: 75%;
+    padding-bottom: 60px;
+}
+section h3{
+    float: left;
+    border-bottom: none;
+    border-right: 1px solid gray;
+}
+#experiences p{
+    padding-left: 100px;
+}
+
+#education p{
+    padding-left: 100px;
+}
+#hobbies ul{
+padding-left: 200px;
+}
+.contacts{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 80px;
+}
+}
